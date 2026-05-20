@@ -29,7 +29,7 @@ A machine learning project that segments customers based on real transactional b
 
  🔄 Workflow Flowchart
 
-📦 Raw Dataset (5,41,909 transactions)
+📦 Raw Dataset
         │
         ▼
 🧹 Data Cleaning
@@ -86,11 +86,11 @@ A machine learning project that segments customers based on real transactional b
 
 customer-segmentation/
 │
-├── customer_segmentation.py       ← Complete project code
+├── customer_segmentation.py       # Complete project code
 │
-├── README.MD                      ← Project documentation
+├── README.MD                      # Project documentation
 │
-└── output-images/                 ← All project visualizations
+└── output-images/                 # All project visualizations
     ├── monthly_revenue.png
     ├── top_products.png
     ├── rfm_distribution.png
@@ -115,6 +115,6 @@ customer-segmentation/
 
 This project successfully demonstrates how raw transactional data can be transformed into meaningful customer intelligence using unsupervised machine learning. By combining RFM Analysis with K-Means Clustering on the Online Retail II dataset, four distinct customer segments were identified — each with unique behavioral patterns and business value.
 
-The segmentation revealed that a small group of High Value VIPs drives a disproportionate share of revenue, while a significant portion of customers are either at risk or already lost — highlighting the urgent need for targeted retention strategies. Rather than treating all customers the same, businesses can now use these segments to personalize communication, allocate marketing budgets more efficiently, and ultimately improve customer lifetime value.
+The segmentation revealed that a small group of High Value VIPs drives a disproportionate share of revenue. At the same time, a significant portion of customers are either at risk or already lost — highlighting the urgent need for targeted retention strategies. Rather than treating all customers the same, businesses can now use these segments to personalize communication, allocate marketing budgets more efficiently, and ultimately improve customer lifetime value.
 
-This project builds a strong foundation in customer analytics, RFM modeling, and data-driven decision making — skills that are directly applicable in roles across data science, business intelligence, and marketing analytics.
+This project builds a strong foundation in customer analytics, RFM modeling, and data-driven decision-making — skills that are directly applicable to roles across data science, business intelligence, and marketing analytics.
