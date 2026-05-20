@@ -27,79 +27,80 @@ A machine learning project that segments customers based on real transactional b
 | Seaborn | Statistical charts |
 | Google Colab | Development environment |
 
- 🔄 Workflow Flowchart
+## 🔄 Workflow Flowchart
 
-📦 Raw Dataset
-        │
-        ▼
-🧹 Data Cleaning
-   ├── Remove null CustomerIDs
-   ├── Remove cancelled orders
-   ├── Remove negative quantities
-   └── Filter to UK customers
-        │
-        ▼
-📊 Exploratory Data Analysis (EDA)
-   ├── Monthly revenue trends
-   └── Top-selling products
-        │
-        ▼
-💰 RFM Analysis
-   ├── Recency   → Days since last purchase
-   ├── Frequency → Number of unique orders
-   └── Monetary  → Total amount spent (£)
-        │
-        ▼
-🏷️ RFM Scoring (1 to 4 per metric)
-   ├── Champions
-   ├── Loyal Customers
-   ├── At Risk
-   ├── Needs Attention
-   └── Lost Customers
-        │
-        ▼
-⚙️ K-Means Clustering
-   ├── StandardScaler — normalize RFM values
-   ├── Elbow Method  — find optimal K
-   └── K-Means with K=4 — assign clusters
-        │
-        ▼
-🏷️ Segment Naming
-   ├── High Value VIPs
-   ├── Loyal Regulars
-   ├── At Risk Customers
-   └── Lost Customers
-        │
-        ▼
-📈 Analysis & Visualization
-   ├── Purchase pattern charts
-   ├── Product preferences per segment
-   └── Monthly revenue by segment
-        │
-        ▼
-🎯 Targeted Business Insights
-   ├── Marketing strategy per segment
-   ├── Communication channel per segment
-   └── Business priority scoring
+```
+Raw Dataset (541909 transactions)
+        |
+        v
+Data Cleaning
+   |-- Remove null CustomerIDs
+   |-- Remove cancelled orders
+   |-- Remove negative quantities
+   |-- Filter to UK customers
+        |
+        v
+Exploratory Data Analysis
+   |-- Monthly revenue trends
+   |-- Top selling products
+        |
+        v
+RFM Analysis
+   |-- Recency   -> Days since last purchase
+   |-- Frequency -> Number of unique orders
+   |-- Monetary  -> Total amount spent
+        |
+        v
+RFM Scoring (1 to 4 per metric)
+   |-- Champions
+   |-- Loyal Customers
+   |-- At Risk
+   |-- Needs Attention
+   |-- Lost Customers
+        |
+        v
+K-Means Clustering
+   |-- StandardScaler - normalize RFM values
+   |-- Elbow Method - find optimal K
+   |-- K-Means with K=4 - assign clusters
+        |
+        v
+Segment Naming
+   |-- High Value VIPs
+   |-- Loyal Regulars
+   |-- At Risk Customers
+   |-- Lost Customers
+        |
+        v
+Analysis and Visualization
+   |-- Purchase pattern charts
+   |-- Product preferences per segment
+   |-- Monthly revenue by segment
+        |
+        v
+Targeted Business Insights
+   |-- Marketing strategy per segment
+   |-- Communication channel per segment
+   |-- Business priority scoring
+```
+## 📂 Project Structure
 
- 📂 Project Structure
-
-customer-segmentation/
-│
-├── customer_segmentation.py       # Complete project code
-│
-├── README.MD                      # Project documentation
-│
-└── output-images/                 # All project visualizations
-    ├── monthly_revenue.png
-    ├── top_products.png
-    ├── rfm_distribution.png
-    ├── rfm_segments.png
-    ├── elbow_method.png
-    ├── customer_clusters.png
-    ├── purchase_patterns.png
-    ├── monthly_by_segment.png
-    └── business_priority.png
+```
+Customer-Segment-Analysis
+|
+|-- README.md                        <- Project documentation
+|-- customer_segment_analysis.py     <- Complete project code
+|-- Online_Retail.xlsx               <- Dataset
+|-- business_priority.png
+|-- customer_clusters.png
+|-- elbow_method.png
+|-- monthly_by_segment.png
+|-- monthly_revenue.png
+|-- purchase_patterns.png
+|-- rfm_distribution.png
+|-- rfm_segments.png
+|-- top_products.png
+```
 
 📚 Learning Outcomes
 
